@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OBJETO | Presentes Personalizados</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f1115;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#b7d600,#7ca000);
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 0 25px rgba(183,214,0,.5);
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:700;
+    color:#fff;
+    letter-spacing:2px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    opacity:.8;
+}
+
+/* HERO */
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    background:
+    radial-gradient(circle at center,#b7d60020,transparent 50%);
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero-content span{
+    color:#b7d600;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    opacity:.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#b7d600;
+    color:#111;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px #b7d600;
+}
+
+/* PRODUTOS */
+
+.produtos{
+    padding:90px 8%;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.titulo h2{
+    font-size:2.5rem;
+}
+
+.titulo span{
+    color:#b7d600;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#171a20;
+    border:1px solid rgba(183,214,0,.2);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(183,214,0,.3);
+}
+
+.img{
+    height:250px;
+    background:#20242c;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#b7d600;
+    font-size:1.2rem;
+}
+
+.info{
+    padding:20px;
+}
+
+.info h3{
+    margin-bottom:10px;
+}
+
+.info p{
+    opacity:.7;
+}
+
+/* SOBRE */
+
+.sobre{
+    padding:90px 8%;
+    text-align:center;
+    background:#14171d;
+}
+
+.sobre h2{
+    margin-bottom:20px;
+    font-size:2.5rem;
+}
+
+.sobre span{
+    color:#b7d600;
+}
+
+.sobre p{
+    max-width:800px;
+    margin:auto;
+    opacity:.8;
+}
+
+/* CONTATO */
+
+.contato{
+    padding:90px 8%;
+}
+
+.contato-box{
+    max-width:800px;
+    margin:auto;
+    background:#171a20;
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+    border:1px solid rgba(183,214,0,.2);
+}
+
+.contato h2{
+    margin-bottom:15px;
+}
+
+.contato span{
+    color:#b7d600;
+}
+
+.contato p{
+    opacity:.8;
+    margin-bottom:25px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0b0d11;
+    padding:25px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.1);
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:2.5rem;
+}
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">OBJETO</div>
+
+<nav>
+<a href="#">Início</a>
+<a href="#">Produtos</a>
+<a href="#">Sobre</a>
+<a href="#">Contato</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Presentes <span>Personalizados</span></h1>
+
+<p>
+Canecas, pijamas e produtos exclusivos feitos para transformar momentos especiais em lembranças inesquecíveis.
+</p>
+
+<a href="#" class="btn">Ver Catálogo</a>
+
+</div>
+
+</section>
+
+<section class="produtos">
+
+<div class="titulo">
+<h2>Nossos <span>Destaques</span></h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="img">
+SUA IMAGEM AQUI
+</div>
+<div class="info">
+<h3>Produto 01</h3>
+<p>Descrição personalizada do produto.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="img">
+SUA IMAGEM AQUI
+</div>
+<div class="info">
+<h3>Produto 02</h3>
+<p>Descrição personalizada do produto.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="img">
+SUA IMAGEM AQUI
+</div>
+<div class="info">
+<h3>Produto 03</h3>
+<p>Descrição personalizada do produto.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="img">
+SUA IMAGEM AQUI
+</div>
+<div class="info">
+<h3>Produto 04</h3>
+<p>Descrição personalizada do produto.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="sobre">
+
+<h2>Sobre a <span>OBJETO</span></h2>
+
+<p>
+Somos especializados em presentes personalizados que unem criatividade, qualidade e carinho em cada detalhe. Nosso objetivo é transformar ideias em produtos únicos para surpreender quem você ama.
+</p>
+
+</section>
+
+<section class="contato">
+
+<div class="contato-box">
+
+<h2>Faça seu <span>Pedido</span></h2>
+
+<p>
+Entre em contato pelo WhatsApp e solicite seu orçamento.
+</p>
+
+<a href="#" class="btn">WhatsApp</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 OBJETO - Presentes Personalizados
+
+</footer>
+
+</body>
+</html>
