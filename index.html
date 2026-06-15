@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OBJETO | Presentes Personalizados</title>
+<title>LojaObjeto | Presentes Personalizados</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 
@@ -17,14 +19,13 @@
 }
 
 body{
-    background:#0f1115;
-    color:white;
+    background:#f8fffa;
+    color:#222;
 }
-
 /* HEADER */
 
 header{
-    background:linear-gradient(135deg,#b7d600,#7ca000);
+    background:linear-gradient(135deg,#00c853,#00e676);
     padding:20px 8%;
     display:flex;
     justify-content:space-between;
@@ -36,10 +37,10 @@ header{
 }
 
 .logo{
-    font-size:2rem;
+    font-size:2.5rem;
     font-weight:700;
-    color:#fff;
-    letter-spacing:2px;
+    color:white;
+    letter-spacing:1px;
 }
 
 nav a{
@@ -56,6 +57,8 @@ nav a:hover{
 
 /* HERO */
 
+/* HERO */
+
 .hero{
     min-height:85vh;
     display:flex;
@@ -63,29 +66,29 @@ nav a:hover{
     align-items:center;
     text-align:center;
     padding:40px;
-    background:
-    radial-gradient(circle at center,#b7d60020,transparent 50%);
+    background:linear-gradient(180deg,#ffffff 0%,#f5fff8 100%);
 }
 
 .hero-content h1{
     font-size:4rem;
     margin-bottom:15px;
+    color:#222;
 }
 
 .hero-content span{
-    color:#b7d600;
+    color:#00c853;
 }
 
 .hero-content p{
     max-width:700px;
     margin:auto;
-    opacity:.8;
+    color:#555;
     margin-bottom:30px;
 }
 
 .btn{
-    background:#b7d600;
-    color:#111;
+    background:#00c853;
+    color:white;
     text-decoration:none;
     padding:15px 35px;
     border-radius:50px;
@@ -95,7 +98,7 @@ nav a:hover{
 
 .btn:hover{
     transform:translateY(-3px);
-    box-shadow:0 0 20px #b7d600;
+    box-shadow:0 0 25px rgba(0,200,83,.5);
 }
 
 /* PRODUTOS */
@@ -114,36 +117,37 @@ nav a:hover{
 }
 
 .titulo span{
-    color:#b7d600;
+    color:#00c853;
 }
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
 }
-
 .card{
-    background:#171a20;
-    border:1px solid rgba(183,214,0,.2);
+    background:white;
+    border:1px solid #e5e7eb;
     border-radius:20px;
     overflow:hidden;
     transition:.4s;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 .card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(183,214,0,.3);
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,200,83,.20);
 }
 
 .img{
-    height:250px;
-    background:#20242c;
+    height:220px;
+    background:#f5f5f5;
+    border-radius:15px;
     display:flex;
     justify-content:center;
     align-items:center;
-    color:#b7d600;
-    font-size:1.2rem;
+    color:#00c853;
+    font-weight:600;
 }
 
 .info{
@@ -164,15 +168,15 @@ nav a:hover{
     padding:90px 8%;
     text-align:center;
     background:#14171d;
+    color:white;
 }
-
 .sobre h2{
     margin-bottom:20px;
     font-size:2.5rem;
 }
 
 .sobre span{
-    color:#b7d600;
+    color:#00c853;
 }
 
 .sobre p{
@@ -202,7 +206,7 @@ nav a:hover{
 }
 
 .contato span{
-    color:#b7d600;
+    color:#00c853;
 }
 
 .contato p{
@@ -218,7 +222,27 @@ footer{
     text-align:center;
     border-top:1px solid rgba(255,255,255,.1);
 }
-
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:65px;
+    height:65px;
+    background:#00c853;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:30px;
+    color:white;
+    box-shadow:0 0 20px rgba(0,200,83,.5);
+    z-index:9999;
+    transition:.3s;
+}
+.whatsapp:hover{
+    transform:scale(1.1);
+}   
 @media(max-width:768px){
 
 .hero-content h1{
@@ -238,14 +262,7 @@ gap:15px;
 
 <header>
 
-<div class="logo">OBJETO</div>
-
-<nav>
-<a href="#">Início</a>
-<a href="#">Produtos</a>
-<a href="#">Sobre</a>
-<a href="#">Contato</a>
-</nav>
+<div class="logo">LojaObjeto</div>
 
 </header>
 
@@ -259,13 +276,13 @@ gap:15px;
 Canecas, pijamas e produtos exclusivos feitos para transformar momentos especiais em lembranças inesquecíveis.
 </p>
 
-<a href="#" class="btn">Ver Catálogo</a>
+<a href="#catalogo" class="btn">Ver Catálogo</a>
 
 </div>
 
 </section>
 
-<section class="produtos">
+<section class="produtos" id="catalogo">
 
 <div class="titulo">
 <h2>Nossos <span>Destaques</span></h2>
@@ -273,44 +290,135 @@ Canecas, pijamas e produtos exclusivos feitos para transformar momentos especiai
 
 <div class="grid">
 
+<!-- PRODUTO 01 -->
 <div class="card">
-<div class="img">
-SUA IMAGEM AQUI
-</div>
-<div class="info">
-<h3>Produto 01</h3>
-<p>Descrição personalizada do produto.</p>
-</div>
+<div class="img">IMAGEM 01</div>
+<div class="info"><h3>Produto 01</h3></div>
 </div>
 
 <div class="card">
-<div class="img">
-SUA IMAGEM AQUI
-</div>
-<div class="info">
-<h3>Produto 02</h3>
-<p>Descrição personalizada do produto.</p>
-</div>
+<div class="img">IMAGEM 02</div>
+<div class="info"><h3>Produto 02</h3></div>
 </div>
 
 <div class="card">
-<div class="img">
-SUA IMAGEM AQUI
-</div>
-<div class="info">
-<h3>Produto 03</h3>
-<p>Descrição personalizada do produto.</p>
-</div>
+<div class="img">IMAGEM 03</div>
+<div class="info"><h3>Produto 03</h3></div>
 </div>
 
 <div class="card">
-<div class="img">
-SUA IMAGEM AQUI
+<div class="img">IMAGEM 04</div>
+<div class="info"><h3>Produto 04</h3></div>
 </div>
-<div class="info">
-<h3>Produto 04</h3>
-<p>Descrição personalizada do produto.</p>
+
+<div class="card">
+<div class="img">IMAGEM 05</div>
+<div class="info"><h3>Produto 05</h3></div>
 </div>
+
+<div class="card">
+<div class="img">IMAGEM 06</div>
+<div class="info"><h3>Produto 06</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 07</div>
+<div class="info"><h3>Produto 07</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 08</div>
+<div class="info"><h3>Produto 08</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 09</div>
+<div class="info"><h3>Produto 09</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 10</div>
+<div class="info"><h3>Produto 10</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 11</div>
+<div class="info"><h3>Produto 11</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 12</div>
+<div class="info"><h3>Produto 12</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 13</div>
+<div class="info"><h3>Produto 13</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 14</div>
+<div class="info"><h3>Produto 14</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 15</div>
+<div class="info"><h3>Produto 15</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 16</div>
+<div class="info"><h3>Produto 16</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 17</div>
+<div class="info"><h3>Produto 17</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 18</div>
+<div class="info"><h3>Produto 18</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 19</div>
+<div class="info"><h3>Produto 19</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 20</div>
+<div class="info"><h3>Produto 20</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 21</div>
+<div class="info"><h3>Produto 21</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 22</div>
+<div class="info"><h3>Produto 22</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 23</div>
+<div class="info"><h3>Produto 23</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 24</div>
+<div class="info"><h3>Produto 24</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 25</div>
+<div class="info"><h3>Produto 25</h3></div>
+</div>
+
+<div class="card">
+<div class="img">IMAGEM 26</div>
+<div class="info"><h3>Produto 26</h3></div>
 </div>
 
 </div>
@@ -319,7 +427,7 @@ SUA IMAGEM AQUI
 
 <section class="sobre">
 
-<h2>Sobre a <span>OBJETO</span></h2>
+<h2>Sobre a <span>LojaObjeto</span></h2>
 
 <p>
 Somos especializados em presentes personalizados que unem criatividade, qualidade e carinho em cada detalhe. Nosso objetivo é transformar ideias em produtos únicos para surpreender quem você ama.
@@ -337,17 +445,23 @@ Somos especializados em presentes personalizados que unem criatividade, qualidad
 Entre em contato pelo WhatsApp e solicite seu orçamento.
 </p>
 
-<a href="#" class="btn">WhatsApp</a>
+<a href="https://wa.me/554498680100" class="btn" target="_blank">
+Falar no WhatsApp
+</a>
 
 </div>
-
+    
 </section>
 
 <footer>
 
-© 2026 OBJETO - Presentes Personalizados
+© 2026 LojaObjeto - Todos os direitos reservados
 
 </footer>
 
+<a href="https://wa.me/554498680100" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+    
 </body>
 </html>
